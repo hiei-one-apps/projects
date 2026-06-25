@@ -73,7 +73,7 @@
         <p class="effective-date">Effective date: June 23, 2026</p>
 
         <p>
-          Student Toolkit PH is an offline-first mobile app for students. The app provides tools for class scheduling, grade calculation, study timing, daily expense tracking, and optional feedback submission.
+          Student Toolkit PH is an offline-first mobile app for students. The app provides tools for class scheduling, grade calculation, study timing, daily expense tracking, optional feedback submission, and basic app usage analytics.
         </p>
 
         <h2>Data We Store</h2>
@@ -85,10 +85,13 @@
         <p>
           If the user chooses to submit feedback, the app sends the feedback comment to the app owner through a Google Apps Script endpoint and stores it in a Google Sheet. Optional feedback fields may include name, grade level, and school. The app does not require an account and does not upload schedules, grades, expenses, or timer activity to a server.
         </p>
+        <p>
+          The app may collect basic analytics events to understand which tools are used and improve the app. Analytics events do not include subject names, teacher names, grade values, expense names, expense amounts, feedback comments, student names, school names, or other user-entered personal details.
+        </p>
 
         <h2>Third-Party Services</h2>
         <p>
-          The feedback feature uses Google Apps Script and Google Sheets to receive and store user-submitted feedback. The current version does not include advertising, analytics, cloud sync, or third-party tracking SDKs.
+          The feedback feature uses Google Apps Script and Google Sheets to receive and store user-submitted feedback. Analytics, when configured, uses PostHog to collect privacy-friendly app usage events. The current version does not include advertising, cloud sync, or third-party advertising SDKs.
         </p>
         <p>
           If future versions add ads, analytics, or other cloud features, this policy should be updated before release.
